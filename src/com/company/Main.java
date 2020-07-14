@@ -1,7 +1,5 @@
 package com.company;
 
-
-import java.text.NumberFormat;
 import java.util.*;
 
 
@@ -113,57 +111,6 @@ public class Main {
     }
 
 
-//    public static boolean changeBalance(Account account, Operation operation, Long sum) {
-//        // write your implementation here
-//        boolean isChanged = false;
-//        switch(operation) {
-//            case DEPOSIT: {
-//                account.balance = account.balance + sum;
-//                isChanged = true;
-//                break;
-//            }
-//            case WITHDRAW: {
-//                if (account.balance < sum) {
-//                    System.out.println("Not enough money to withraw.");
-//                } else {
-//                    account.balance = account.balance - sum;
-//                    isChanged = true;
-//                    break;
-//                }
-//            }
-//        }
-//        return isChanged;
-//    }
-//
-//    enum Operation {
-//        /**
-//         * deposit (add) an amount into an Account
-//         */
-//        DEPOSIT,
-//        /**
-//         * withdraw (subtract) an amount from an Account
-//         */
-//        WITHDRAW
-//    }
-//
-//    static class Account {
-//
-//        private String code;
-//        private Long balance;
-//
-//        public String getCode() {
-//            return code;
-//        }
-//
-//        public Long getBalance() {
-//            return balance;
-//        }
-//
-//        public void setBalance(Long balance) {
-//            this.balance = balance;
-//
-//        }
-//    }
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -253,58 +200,6 @@ public class Main {
                 break;
             }
         }
-
-
-//        Scanner scanner = new Scanner(System.in);
-//        String[] arr = new String[0];
-//
-//        arr = scanner.nextLine().split(" ");
-//
-//        int[] array = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
-//        //System.out.println(Arrays.toString(array));
-//
-//        int rotateBy = scanner.nextInt();
-//        if (rotateBy > array.length) {
-//            rotateBy = rotateBy % array.length;
-//        }
-//
-//        for (int i = 0; i < rotateBy; i++) {
-//            //if (rotateBy > array.length) {
-//                //rotateBy = rotateBy % array.length;
-//                //System.out.println(array.length);
-//            //}
-//            int j, last;
-//            last = array[array.length - 1];
-//
-//            for (j = array.length - 1; j > 0; j--) {
-//                array[j] = array[j - 1];
-//            }
-//            array[0] = last;
-//        }
-//        for (int i : array) {
-//            System.out.print( i + " ");
-//        }
-
-
-//        Scanner scanner = new Scanner(System.in);
-//
-//        String[] parts = scanner.nextLine().split("\\s+");
-//
-//        Account account = new Account();
-//        account.setBalance(Long.parseLong(parts[0]));
-//
-//        Operation operation = Operation.valueOf(parts[1]);
-//
-//        Long sum = Long.parseLong(parts[2]);
-//
-//        if (changeBalance(account, operation, sum)) {
-//            System.out.println(account.getBalance());
-//        }
-
-
-
-
-
 
     }
 }
